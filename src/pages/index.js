@@ -1,6 +1,8 @@
 import Container from '@/componnent/Container';
 import Head from 'next/head';
+import Image from 'next/image';
 import { UsesContext } from '../../context/Context';
+import img from "../../public/BD_Map_admin.svg";
 import styles from "../styles/Home.module.css";
 
 
@@ -22,8 +24,7 @@ export default function Home() {
       <main className='main'>
         <Container>
           <div className={styles.imgWrp}>
-            {/* <Image className={styles.img} src={img} /> */}
-            {/* <iframe height="100" className={styles.img} src={url}></iframe> */}
+            {url === "" ? < Image className={styles.img} src={img} /> : <iframe height="100" className={styles.ifram} src={`https://${url}`}></iframe>}
           </div>
         </Container>
       </main>
