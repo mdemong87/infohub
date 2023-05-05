@@ -1,0 +1,18 @@
+.werper {
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    box-sizing: content-box;
+    padding: 10px 5px;
+}
+
+.werper>option {
+    padding: 5px 0;
+    background: #003173;
+    color: #fff;
+    text-indent: 20px;
+
+}
