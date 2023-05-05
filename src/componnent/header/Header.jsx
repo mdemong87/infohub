@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 import { UsesContext } from "../../../context/Context";
 import valueChecker from "../../../utlizer/valueChecker";
 import Languese from "../../componnent/Languese";
@@ -34,12 +33,6 @@ export default function Header() {
   }
 
 
-  useEffect(() => {
-
-    window.open(url, "_blank");
-
-  }, [url])
-
 
 
 
@@ -68,7 +61,7 @@ export default function Header() {
             <button onClick={() => handleSercha()} className={styles.searchBtn}>Go</button>
           </div>
         </Container>
-      </div>
-    </div>
+      </div >
+    </div >
   )
 }

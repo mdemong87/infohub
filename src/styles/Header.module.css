@@ -1,6 +1,6 @@
 .wrper {
     width: 100%;
-    height: 150px;
+    height: fit-content;
     display: grid;
     grid-template-rows: 1fr 1fr;
     color: #fff;
@@ -17,8 +17,12 @@
     width: 100% !important;
     align-items: center;
     justify-content: flex-start;
+    height: fit-content !important;
 
 }
+
+
+
 
 
 
@@ -42,4 +46,34 @@
     color: black;
     font-weight: bold;
     cursor: pointer;
+}
+
+
+@media (max-width:1024px) {
+    .selectWrp {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 20px;
+
+    }
+
+    .wrper {
+        height: 200px;
+    }
+
+
+}
+
+@media (max-width:768px) {
+    .selectWrp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 20px;
+    }
+
+    .wrper {
+        height: 280px;
+    }
+
+
 }
