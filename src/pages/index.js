@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { UsesContext } from '../../context/Context';
 import styles from "../styles/Home.module.css";
 
+
 export default function Home() {
 
 
@@ -22,7 +23,7 @@ export default function Home() {
         <Container>
           <div className={styles.imgWrp}>
             {/* <Image className={styles.img} src={img} /> */}
-            <iframe className={styles.img} src={url}></iframe>
+            {/* <iframe height="100" className={styles.img} src={url}></iframe> */}
           </div>
         </Container>
       </main>
